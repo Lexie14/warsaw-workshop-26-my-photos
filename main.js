@@ -11,15 +11,5 @@ fileForm.bindEvent();
 
 let lightBox = new LightBox();
 
-// let allImages = []
-// let parentEl = document.querySelector('.images-list');
-
-// allImages = localData.map(function(image) {
-// 	let imageClass = new ImageClass(image);
-// 	return parentEl.appendChild(imageClass.render());
-
-// 	// return `<img src ='${image.url}'/>`;
-// })
-
 
 

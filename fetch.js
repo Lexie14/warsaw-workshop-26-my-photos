@@ -7,10 +7,11 @@ function fetchImages({ tags=['rabbit'], mode = 'ALL', callback } = {}) {
 const url = `https://api.flickr.com/services/feeds/photos_public.gne?tagmode=${mode}&tags=${tags.join(
    ","
  )}&format=json`;
-const s = document.createElement('script');
-s.src = url;
-s.type = "text/javascript";
-document.body.appendChild(s);
+const scriptEl = document.createElement('script');
+scriptEl.src = url;
+scriptEl.type = "text/javascript";
+document.body.appendChild(scriptEl);
+document.body.removeChild(scriptEl);
 }
 
 function jsonFlickrFeed(data) {
