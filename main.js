@@ -1,10 +1,15 @@
-let imagesList = new ImagesList({source: localData});
-imagesList.render();
+let imagesList = new ImagesList();
+
+
+
+fetchImages({ callback: () => { let carousel = new Carousel(); } });
+
 
 let fileForm = new FileForm();
 fileForm.render();
 fileForm.bindEvent();
 
+let lightBox = new LightBox();
 
 // let allImages = []
 // let parentEl = document.querySelector('.images-list');
